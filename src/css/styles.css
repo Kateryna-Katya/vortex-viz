@@ -1033,3 +1033,106 @@ ul {
     opacity: 1;
     /* Оставляем 1, JS сам скроет их при загрузке */
 }
+/* Стили для контентных страниц (Privacy, Cookies и др.) */
+.pages {
+    background-color: var(--color-bg);
+    /* Ваш глубокий серо-синий */
+    color: var(--color-text);
+    padding: 100px 0 60px;
+    font-family: var(--font-main);
+}
+
+.pages .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.pages h1 {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    color: var(--color-primary);
+    /* Мятный акцент */
+    margin-bottom: 2rem;
+    letter-spacing: -0.02em;
+}
+
+.pages h2 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--color-accent);
+    /* Лавандовый */
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.pages p {
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-muted);
+}
+
+.pages ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+.pages li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-muted);
+}
+
+.pages li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+}
+
+.pages strong {
+    color: var(--color-white);
+}
+
+.pages a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: var(--transition);
+    border-bottom: 1px solid transparent;
+}
+
+.pages a:hover {
+    border-bottom-color: var(--color-primary);
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .pages h1 {
+        font-size: 1.8rem;
+    }
+
+    .pages .container {
+        padding: 20px;
+        margin: 0 15px;
+    }
+}
+.confirmation-box {
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.disclaimer-content p {
+    margin-bottom: 1.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 1rem;
+}
+
+.disclaimer-content p:last-child {
+    border-bottom: none;
+}
